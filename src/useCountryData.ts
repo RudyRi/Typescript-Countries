@@ -14,6 +14,8 @@ export const useCountryData = (regionFilter:string|null) :Country[] => {
 
             if(regionFilter){
                 filteredCountries = filteredCountries.filter((country:Country) => country.region === regionFilter)
+
+                
             }
             console.log(result[0].name.common)
             setCountries(filteredCountries)

@@ -1,11 +1,9 @@
-import { Card } from "./Card"
 import { Country } from "../interfaces/interfaceCountry"
+import { Card } from "./Card"
+
 
 interface ICountryListProps{
-    countries: Array<{
-        name:{common:string}
-        flags:{svg:string}
-    }>
+    countries: Array<Country>
 }
 
 export const ListCountries:React.FC<ICountryListProps> = ({countries}) => {
